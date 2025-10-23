@@ -35,7 +35,7 @@ public class Hotel {
     @UpdateTimestamp
     private LocalDateTime updatedAt;
 
-    @Embedded
+    @Embedded  // embedded means this info is being fetched from other entity but no separate table is there for it
     private HotelContactInfo contactInfo;
 
 }

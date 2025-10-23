@@ -24,8 +24,7 @@ public class Inventory {
     private Long id;
 
     @ManyToOne(fetch = FetchType.EAGER)  // To fetch hotel info as well when fetching inventory
-    @JoinColumn(name="hotel_id")
-    @Column(nullable = false)
+    @JoinColumn(name="hotel_id",nullable = false)
     private Hotel hotel;
 
     @ManyToOne(fetch = FetchType.LAZY)
