@@ -38,4 +38,10 @@ public class Hotel {
     @Embedded  // embedded means this info is being fetched from other entity but no separate table is there for it
     private HotelContactInfo contactInfo;
 
+    @Column(nullable = false)
+    private Boolean active;
+
+    @ManyToOne
+    private User owner;
+
 }
